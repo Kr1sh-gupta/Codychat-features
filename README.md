@@ -51,6 +51,23 @@ These modifications have been tested and verified to work with CodyChat versions
 - [Krish Gupta](https://github.com/Kr1sh-gupta)
 - [Mohammed Althaf H](https://github.com/mohammed-althaf-h)
 
+
+# Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Kr1sh-gupta"><img src="https://avatars.githubusercontent.com/u/73186767?s=100" width="100px;" alt="Krish Gupta"/><br /><sub><b>Krish Gupta</b></sub></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mohammed-althaf-h"><img src="https://avatars.githubusercontent.com/u/50052789?v=4?s=100" width="100px;" alt="Mohammed Althaf H"/><br /><sub><b>Mohammed Althaf H</b></sub></a><br /></td>
+    </tr>
+  </tbody>
+</table>
+
 ## License
 
  This project is licensed under the [MIT License](https://github.com/Kr1sh-gupta/Codychat-features/blob/main/LICENSE)
