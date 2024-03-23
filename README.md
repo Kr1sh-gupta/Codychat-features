@@ -53,6 +53,6 @@ These modifications have been tested and verified to work with CodyChat versions
 
 ## License
 
-[MIT License](https://github.com/Kr1sh-gupta/Codychat-features/blob/main/LICENSE)
+ This project is licensed under the [MIT License](https://github.com/Kr1sh-gupta/Codychat-features/blob/main/LICENSE)
 
 ---
