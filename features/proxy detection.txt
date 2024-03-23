@@ -1,0 +1,14 @@
+<?php if(canViewIp($user)){ ?>
+            <div class="listing_half_element info_pro">
+                <div class="listing_title">Proxy Check</div>
+                <div class="listing_text"><a href="https://proxycheck.io/threats/<?php echo $user['user_ip']; ?>" target="proxy"><font color="red">Click to check</font></a></div>
+                </div>
+            <?php } ?>
+then add under that
+
+<?php if(canViewIp($user)){ ?>
+            <div class="listing_half_element info_pro">
+                <div class="listing_title">user ip search</div>
+                <div class="listing_text"><a href="https://whatismyipaddress.com/ip/<?php echo $user['user_ip']; ?>" target="ip"><font color="red"><?php echo $user['user_ip']; ?></font></a></div>
+                </div>
+            <?php } ?>

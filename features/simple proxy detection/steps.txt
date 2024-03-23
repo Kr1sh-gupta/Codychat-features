@@ -1,0 +1,39 @@
+Step 1 open system/function.php and add this simple code; 
+
+//////////////////////////////////////// Author: brannik ////////////////////////////////////////
+//////////////////////////////////////// start check ////////////////////////////////////////
+function boomProxy(){
+$ip_addr = getIp();
+$ip_safe = array('0.0.0.0','0.0.0.1');
+if(in_array($ip_addr, $ip_safe)){
+return false;
+}
+if($ip_addr != '127.0.0.1'){
+$blacklist_1 = file_get_contents('http://proxy.mind-media.com/block/proxycheck.php?ip=' . $ip_addr);
+$blacklist_2 = file_get_contents('http://www.stopforumspam.com/api?ip=' . $ip_addr);
+$blacklist_3 = file_get_contents('http://www.stopforumspam.com/api?ip=127.0.0.1');
+if (('Y') == ($blacklist_1) || ($blacklist_3) != ($blacklist_2)){
+return true;
+}
+}
+}
+//////////////////////////////////////// end check ////////////////////////////////////////
+//////////////////////////////////////// Author: brannik ////////////////////////////////////////
+$ip_safe = array('0.0.0.0','0.0.0.1'); - you can replace 0.0.0.0 and 0.0.0.1 with your IPs to allow them (whitelist).
+
+Every new IP need to be like ('0.0.0.0','0.0.0.1','0.0.0.2', etc...
+
+first step is over and now you need to define this function in head_load.php to detect true or not; now open head_load.php and find;
+
+if(checkBan($ip)){
+include('banned.php');
+include('body_end.php');
+die();
+}
+after this just add;
+
+if(boomProxy()){
+include('banned.php');
+include('body_end.php');
+die();
+}

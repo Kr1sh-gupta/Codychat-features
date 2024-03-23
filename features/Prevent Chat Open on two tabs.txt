@@ -1,0 +1,15 @@
+<script>
+    localStorage.cpages = Date.now();
+    window.addEventListener('storage', function (e) {
+        if(e.key == "cpages") {
+            localStorage.npage = Date.now();
+        }
+        if(e.key == "npage") {
+            alert('place your code here and make something cool to let them know they have 2 chat tab open');
+        }
+    }, false);
+</script>
+
+
+
+-> put that little code inside control / chat.php before the other js included files

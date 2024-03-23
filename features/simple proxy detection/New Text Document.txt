@@ -1,0 +1,17 @@
+dat
+f0b8b036db0e565e7f5e10f86bb48f95433ca6af
+
+boom
+c82f9c8195a07e0f19aada617bbb35fc0c0ea34f
+
+
+
+$DB_HOST = "localhost";
+$DB_USER = "allotalk_user";
+$DB_PASS = "AKS.admin@1234";
+$DB_NAME = "allotalk_stranger";
+
+// Please do not modify this line post installation
+$encryption = "89-32MfB27aabded70af14e-4248223OO6110-8";
+$check_install = 1;
+?>

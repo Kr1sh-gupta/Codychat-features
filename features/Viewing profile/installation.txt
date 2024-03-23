@@ -1,0 +1,27 @@
+Hello everyone, I would like to share this code with you.
+
+Who Viewed Your Profile
+1- Go to ./system/function.php file
+
+and add this function
+function blackNotify(){
+global $mysqli, $data, $user;
+$id = escape($_POST['get_profile']);
+$inline_css = 'color: #fff;background: green;padding: 2px 8px;border-radius: 2px;font-size: 12px;';
+$template = '<span onclick="getProfile('. $data['user_id'] .');" style="'. $inline_css .'"><i class="fa fa-eye"></i> Open profile</span>';
+if(isset($id) && !mySelf($user['user_id']) && isOwner($user)){
+boomNotify("profile_visit", array("hunter" => $data['user_id' ], "target" => $user["user_id"], "custom" => $template));
+}
+}
+2- We will go to a file
+system/language/notification.php
+We will add this at the end of the file.
+$nlang['profile_visit'] = 'has visited your profile %data%';
+The last code, we will go to the
+system/box/profile.php file
+, but my dear brother, if you are using the member store add-on, please modify the store profile file, and we
+
+will add this. code
+blackNotify()
+
+ss is attached
